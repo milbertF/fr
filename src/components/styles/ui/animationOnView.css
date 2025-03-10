@@ -1,0 +1,17 @@
+.onView {
+  animation: onView2 both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes onView2 {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    scale: 0.3;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    scale: 1;
+  }
+}

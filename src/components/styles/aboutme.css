@@ -1,0 +1,119 @@
+.aboutWrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutWrap h2 {
+  margin-block: 50px;
+  font-family: YoungSerif;
+  font-size: 1.8rem;
+}
+.aboutCon {
+  width: 60rem;
+  display: flex;
+  max-width: 90%;
+  /* overflow: hidden; */
+}
+.aboutImg {
+  width: 45%;
+  aspect-ratio: 9/10;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent,
+    hsl(from var(--text-color) h s l / 0.2),
+    hsl(from var(--text-color) h s l / 0.5),
+    hsl(from var(--text-color) h s l / 1)
+  );
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom-right-radius: clamp(2rem, 6vw, 5rem);
+  border-bottom-left-radius: clamp(2rem, 6vw, 5rem);
+  /* overflow: hidden; */
+}
+.aboutImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 5rem;
+  filter: drop-shadow(
+    hsl(from var(--background-color) h s l / 0.3) -0.5rem 0.5rem 1rem
+  );
+  animation: onView both;
+  animation-timeline: view(85% 5%);
+}
+@keyframes onView {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+    scale: 0.3;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    scale: 1;
+  }
+}
+
+.aboutDetails {
+  width: 55%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.aboutDetails h3 {
+  font-size: 1.5rem;
+}
+.aboutDetails p {
+  font-size: 0.9rem;
+}
+.abline {
+  height: 2px;
+  background-color: var(--text-color);
+}
+.aboutLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.aboutLinks a {
+  display: flex;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--text-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  gap: 0.2rem;
+  color: var(--background-color);
+}
+.linkWrap {
+  display: flex;
+  gap: 1rem;
+}
+.block {
+  width: 60rem;
+  height: 8rem;
+  background-color: var(--background-color);
+  z-index: 1;
+  transition: all 0.5s ease;
+  max-width: 100%;
+}
+
+@media (max-width: 750px) {
+  .aboutCon {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutDetails {
+    width: 100%;
+  }
+  .aboutImg {
+    width: 25rem;
+    max-width: 100%;
+  }
+}

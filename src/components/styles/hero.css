@@ -1,0 +1,121 @@
+.heroWrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.heroWrap h1 {
+  font-size: clamp(2rem, 5.5vw, 5rem);
+  text-align: center;
+  font-family: YoungSerif;
+  letter-spacing: 0.1rem;
+
+  width: 25ch;
+  max-width: 90%;
+  line-height: clamp(2.5rem, 6vw, 5.5rem);
+}
+.heroWrap > p {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  text-align: center;
+  color: hsl(from var(--text-color) h s l / 0.7);
+  max-width: 70%;
+  margin-top: 2rem;
+  width: 55ch;
+}
+.heroWrap h1 {
+  color: var(--text-color);
+}
+
+.heroWrap a {
+  color: inherit;
+  text-decoration: none;
+}
+.heroWrap a {
+  background: linear-gradient(
+      to right,
+      var(--background-color),
+      var(--background-color)
+    ),
+    linear-gradient(
+      to right,
+      var(--firstColor),
+      var(--secondColor),
+      var(--thirdColor)
+    );
+  background-size: 100% clamp(1.2rem, 3vw, 3rem), 0 clamp(1.2rem, 3vw, 3rem);
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 500ms;
+}
+
+.heroWrap a:hover,
+.heroWrap a:focus {
+  background-size: 0 clamp(1.2rem, 3vw, 3rem), 100% clamp(1.2rem, 3vw, 3rem);
+}
+
+.heroWrap i {
+  position: absolute;
+  bottom: 3rem;
+  background-color: hsl(from var(--text-color) h s l / 0.5);
+  color: var(--background-color);
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0.3;
+}
+.heroWrap i:hover {
+  transform: scaleY(1.2);
+  opacity: 0.7;
+}
+
+.heroWrap i:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.companies {
+  width: 60rem;
+  /* height: 3rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+  max-width: 90%;
+  flex-wrap: wrap;
+}
+.company {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: hsl(from var(--text-color) h s l / 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.company img {
+  height: 80%;
+  filter: grayscale(10) var(--filter);
+  pointer-events: none;
+  user-select: none;
+}
+.company p {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  pointer-events: none;
+  user-select: none;
+}
+.company:hover {
+  scale: 1.1;
+}
+
+.companyWrap {
+  display: flex;
+  gap: 1.5rem;
+}

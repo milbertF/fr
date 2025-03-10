@@ -1,0 +1,9 @@
+.onLoad {
+  animation: onLoad 0.8s forwards linear;
+}
+@keyframes onLoad {
+  from {
+    opacity: 0.3;
+    scale: 0.95;
+  }
+}
