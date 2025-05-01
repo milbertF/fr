@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './../styles/hero.css'
-import tooltipHover from "./../javascript/tooltip.js";
 
 import BlueWaters from './../images/companyLogo/blueWaters.png'
 import Cramatix from './../images/companyLogo/cramatix.svg'
@@ -41,11 +40,6 @@ export class hero extends Component {
         <h1 className='onLoad'><a>Turning ideas into interactive experiences.</a></h1>
         <p className='onLoad'>Frontend Developer dedicated to crafting seamless, responsive, and
         visually engaging digital experiences that bring ideas to life.</p>
-
-        <i class="fa-solid fa-arrow-down-long onLoads"
-            onMouseOver={(e) => tooltipHover(e, "Go Down")}
-            onMouseOut={() => tooltipHover(null, "")}
-        ></i>
       </div>
     )
   }

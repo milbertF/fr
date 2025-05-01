@@ -12,7 +12,7 @@ html {
   /* background-color: rgba(0, 128, 0, 0.144); */
 }
 :root {
-  --background-color: #efefef;
+  --background-color: #eeeeee;
   --text-color: #000000;
   --accent-color: #ff0000;
   --secondary-color: #ffffff;
@@ -24,10 +24,10 @@ html {
 }
 
 html.dark {
-  --background-color: #121212;
+  --background-color: #181818;
   --text-color: #ffffff;
   --accent-color: #ff4d4d;
-  --secondary-color: #1e1e1e;
+  --secondary-color: #313131;
 
   --firstColor: #74580fcc;
   --secondColor: #7c370bcc;
@@ -38,7 +38,7 @@ html.dark {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: sans-serif;
+  font-family: Segoe UI;
   transition: background-color 0.5s ease;
 }
 
