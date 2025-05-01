@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './components/styles/ui/animationOnLoad.css';
 import './components/styles/ui/animationOnView.css';
+import './components/styles/ui/animationOnViewCard.css';
 import './components/styles/ui/tooltip.css';
 
 import Header from './components/templates/header.jsx';
