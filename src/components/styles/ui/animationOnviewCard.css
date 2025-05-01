@@ -19,6 +19,7 @@
   animation-timeline: view(60% 30%);
 }
 
+
 @keyframes onViewCard2 {
   from {
     opacity: 0;
