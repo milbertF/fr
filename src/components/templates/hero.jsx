@@ -5,7 +5,7 @@ import BlueWaters from './../images/companyLogo/blueWaters.png'
 import Cramatix from './../images/companyLogo/cramatix.svg'
 import Sienne from './../images/companyLogo/sienne.svg'
 import Viaje from './../images/companyLogo/viaje.png'
-import Bidwave from './../images/projects/bidwave.png'
+import Bidwave from './../images/companyLogo/bidwave.png'
 
 export class hero extends Component {
   render() {

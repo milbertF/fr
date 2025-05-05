@@ -23,6 +23,7 @@
       }
 
       .new {
+        min-height: 10rem;
         height: 10rem;
         margin-top: 1rem;
         display: flex;
@@ -54,8 +55,8 @@
         }
       }
       .cardL {
-        justify-content: flex-start;
-        padding-left: 6rem;
+        /* justify-content: flex-start; */
+        /* padding-left: 6rem; */
         position: relative;
         .onViewCard {
           &::after {
@@ -71,8 +72,8 @@
         }
       }
       .cardR {
-        justify-content: flex-end;
-        padding-right: 6rem;
+        /* justify-content: flex-end; */
+        /* padding-right: 6rem; */
         .onViewCard {
           &::after {
             content: "";
@@ -173,6 +174,40 @@
     .cardcon:has(.card:hover) .card:not(:hover) {
       filter: grayscale(1) contrast(2);
       scale: 0.95;
+    }
+  }
+}
+
+.cardL{
+  justify-content: flex-start;
+  padding-left: 6rem;
+}
+.cardR {
+  justify-content: flex-end;
+  padding-right: 6rem;
+}
+
+@media (max-width: 1100px){
+  .cardR{
+    justify-content: center;
+    padding-right: 0;
+
+    .onViewCard{
+      &::after{
+      display: none;
+    }
+    }
+
+    
+  }
+  .cardL{
+    justify-content: center;
+    padding-left: 0;
+
+    .onViewCard{
+      &::after{
+      display: none;
+    }
     }
   }
 }

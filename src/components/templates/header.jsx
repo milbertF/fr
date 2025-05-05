@@ -75,14 +75,14 @@ export class Header extends Component {
           <h1>Milbert</h1>
           <div className="headerNav">
             <ul>
-              <li>
+              {/* <li>
                 <a href="#aboutme">About Me</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
               </li>
               <li>Blogs</li>
-              <li>Contact</li>
+              <li>Contact</li> */}
               <i
                 onMouseOver={(e) => tooltipHover(e, tooltipText)}
                 onMouseOut={() => tooltipHover(null, "")}

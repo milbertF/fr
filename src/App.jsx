@@ -12,6 +12,8 @@ import Aboutme from './components/templates/aboume.jsx';
 import Process from './components/templates/process.jsx';
 import Blog from './components/templates/blog.jsx';
 import Blogpage from './components/templates/blogPage.jsx';
+import Project from './components/templates/projects.jsx';
+import Contact from './components/templates/contact.jsx';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
               <Aboutme />
               <Process />
               <Blog />
+              <Project />
+              <Contact />
             </>
           }
         />
