@@ -43,6 +43,7 @@ import Onboard from './../images/blog/day8/onboard.jpg';
 import Waiting from './../images/blog/day8/waiting.JPG';
 
 
+
 const details = {
   day1: {
     thumbnail: Thumbnail1,

@@ -12,7 +12,7 @@
       flex-direction: column;
       position: relative;
       height: 1657px;
-      gap: 2rem;
+      /* gap: 2rem; */
 
       svg {
         position: absolute;
@@ -23,7 +23,6 @@
       }
 
       .new {
-        min-height: 10rem;
         height: 10rem;
         margin-top: 1rem;
         display: flex;
@@ -59,6 +58,7 @@
         /* padding-left: 6rem; */
         position: relative;
         .onViewCard {
+          height: auto;
           &::after {
             content: "";
             position: absolute;
@@ -75,6 +75,7 @@
         /* justify-content: flex-end; */
         /* padding-right: 6rem; */
         .onViewCard {
+          height: auto;
           &::after {
             content: "";
             position: absolute;
@@ -178,6 +179,12 @@
   }
 }
 
+.new{
+  height: 10rem;
+}
+.svgContainer{
+  gap: 2rem;
+}
 .cardL{
   justify-content: flex-start;
   padding-left: 6rem;
@@ -209,5 +216,11 @@
       display: none;
     }
     }
+  }
+  .svgContainer{
+    gap: 0.5rem;
+  }
+  .new{
+    height: auto;
   }
 }
