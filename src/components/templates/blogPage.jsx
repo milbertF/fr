@@ -37,7 +37,7 @@ import Thumbnail7 from './../images/blog/day7/thumbnail07.jpg';
 import Bike from './../images/blog/day7/bike.jpg';
 import Back from './../images/blog/day7/backtoqc.jpg';
 
-import Thumbnail8 from './../images/blog/day8/thumbnail8.jpg';
+import Thumbnail8 from './../images/blog/day8/thumbnail8.JPG';
 import Arrived from './../images/blog/day8/arrived.jpg';
 import Onboard from './../images/blog/day8/onboard.jpg';
 import Waiting from './../images/blog/day8/waiting.JPG';
